@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Optional: To add themes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="card w-96 bg-white shadow-xl p-8">
+        <h2 class="text-2xl font-semibold text-center mb-6">Login</h2>
+        <form action="#" method="POST">
+          <div class="form-control mb-4">
+            <label class="label" for="email">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          <div class="form-control mb-4">
+            <label class="label" for="password">
+              <span class="label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          <div class="form-control mt-4">
+            <button type="submit" class="btn btn-primary w-full">Login</button>
+          </div>
+        </form>
+        <p class="mt-4 text-center">
+          Don't have an account?
+          <a href="/signup.html" class="text-blue-500">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
